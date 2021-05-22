@@ -1,0 +1,142 @@
+
+h1{
+    text-align: center;
+    text-transform:capitalize;
+}
+
+h2{
+    text-transform: uppercase;
+}
+
+img{
+    max-width: 100%;
+}
+
+.welcome{
+    background-image: url(../images/galaxy_h.jpeg);
+    padding:100px 50px 50px 50px;
+}
+
+.welcome-text{
+    background-color:rgb(157, 30, 135, 0.7);
+    color: white;
+    padding:5px 20px 10px 20px;
+    border-radius: 10px;
+}
+
+button{
+    background-color:#FFD27E;
+    text-transform: capitalize;
+    font-weight:bold;
+    padding:7px 15px;
+    border-radius: 5px;
+    border: none;
+}
+
+.explore{
+    padding:30px;
+}
+
+.teachers, .kids, .researchers{
+    display: flex;
+    flex-direction: column;
+    padding:20px 25px 20px 25px;
+}
+
+.kids, .researchers{
+    background-color:#9D1E87 ;
+    color: white;
+}
+
+.teachers img{
+    order:2;
+}
+
+.researchers{
+    padding-bottom: 70px;
+}
+
+@media (min-width: 700px){
+    
+    .welcome{
+        padding: 100px 100px 50px 100px;
+    }
+
+    .explore{
+        padding:30px 50px 30px 50px
+    }
+
+}
+
+@media (min-width: 800px){
+    
+    .welcome{
+        padding: 150px 150px 75px 150px;
+    }
+
+    .welcome-text{
+        font-size: 18px;
+        padding: 5px 50px 20px 50px;
+    }
+
+    button{
+        font-size:17px;
+        padding: 10px 25px;
+    }
+
+    .explore{
+        padding:30px 75px 30px 75px;
+    }
+
+    img{
+        max-width: 400px;
+    }
+
+    .kids, .teachers, .researchers{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding:30px 50px;
+        align-items: center;
+    }
+
+    .kids img, .researchers img{
+        padding-left: 50px;
+    }
+
+    .teachers img{
+        order:unset;
+        padding-right: 50px;
+    }
+
+}
+
+@media (min-width: 1200px){
+    
+    .welcome-text{
+        margin: auto;
+        max-width: 700px;
+    }
+
+    .explore{
+        margin: auto;
+        max-width: 800px;
+    }
+
+    .kids img,.kids-text,.teachers img,.teachers-text,.researchers img,.researchers-text{
+        max-width: 600px;
+    }
+
+    .kids-text,.teachers img,.researchers-text{
+        margin: 20px 25px 20px auto;
+    }
+
+    .kids img,.teachers-text,.researchers img{
+        margin: 20px auto 20px 25px;
+    }
+
+    .kids, .teachers, .researchers{
+        align-items: flex-start ;
+    }
+    
+}

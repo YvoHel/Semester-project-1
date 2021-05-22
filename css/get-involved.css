@@ -2,25 +2,23 @@ header, nav, footer{
     background-color: #013265;
 }
 
-nav li:hover{
-    background-color: #0177C3;
-}
-
 .hedline{
     background-image: url(../images/get-involved.jpg);
     padding:120px 30px 50px 30px;
-    background-size: 100%;
+    background-size:cover;
     background-repeat: no-repeat;
+    min-height: 75px;
+    
 }
 
 .hedline-text{
     align-content: center;
     text-align: center;
-    background-color: rgb(157, 30, 135, 0.8);
+    background-color: rgb(1, 119, 195, 0.90);
     color: white;
-    padding:2px;
+    padding:5px;
     text-transform: uppercase;
-    font-size: 10px;
+    font-size: 12px;
     max-width: 300px;
     margin: auto;
 }
@@ -84,6 +82,15 @@ h2{
 
 @media (min-width: 1200px){
 
+    .hedline{
+        height: 150px;
+        padding-top: 200px;
+    }
+
+    .hedline-text{
+        padding: 10px 40px;
+    }
+    
     .support-text,.volunteer img,.internships-text{
         margin: 20px 25px 20px auto;
     }

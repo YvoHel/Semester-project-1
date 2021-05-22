@@ -57,7 +57,7 @@ nav a{
 }
 
 nav li:hover{
-    background-color: #9D1E87;
+    text-decoration:underline;
 }
 
 label{

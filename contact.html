@@ -31,15 +31,24 @@
         <main>
             <div class="contact">
                 <h1>contact us</h1>
-                <form class="contact-form" action="index.html">
-                    <input type="text" class="contact-form-text" name="name" placeholder="Your name">
-                    <input type="text" class="contact-form-text" name="email" placeholder="Your email">
-                    <input type="text" class="contact-form-text" name="phone" placeholder="Your phone">
-                    <textarea class="contact-form-text" name="massege" placeholder="Message"></textarea>
+                <form class="contact-form" id ="contact-form" action="index.html">
+                    <input type="text" class="contact-form-text" id="name" name="name" placeholder="Your name">
+                    <div class="form-error" id="nameError">*Name must be moore than 3 characters</div>
+
+                    <input type="text" class="contact-form-text" id="email" name="email" placeholder="Your email">
+                    <div class="form-error" id="emailError">Please enter a valid email address</div>
+
+                    <input type="text" class="contact-form-text" id="phone" name="phone" placeholder="Your phone">
+                    <div class="form-error" id="phoneError">*Phone must be more than 8 characters</div>
+
+                    <textarea class="contact-form-text" id="message" name="message" placeholder="Message"></textarea>
+                    <div class="form-error" id="messageError">*Message must be more than 25 characters</div>
+
                     <input class="submit-button" type="submit" value="Submit">
                 </form>
             </div>
-            <div class="contact-info">
+            <div class="sucsess">Thank your for getting in touch. We will get back to you as soon as possible. </div>
+            <div class="contact-info" id="contact-info">
                 <div class="contact-email">
                 <p>Send us an email:  Contact@csm.com</p>
                 </div>
@@ -56,6 +65,7 @@
             </div>
             <p>© 2021 Community Science Museum. All Rights Reserved</p>
         </footer>
+        <script src="js/contact.js"></script>
     </body>
 </html>
 
